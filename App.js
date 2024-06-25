@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, SafeAreaView } from 'react-native';
 import { Card} from 'react-native-paper';
 import Feather from 'react-native-vector-icons/Feather'
+import { AppleFilled } from '@ant-design/icons';
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
@@ -58,6 +59,19 @@ export default function App() {
     <Text>Settings</Text>
    </View>
     </View>
+    <Card style={styles.card1}>
+      <View>
+        <View style={{flexDirection: 'row'}}>
+    <Text style={{fontWeight: 'bold', fontSize: 21}}>Apple store</Text>
+    <Text style={{ marginLeft: 200, fontWeight: 'bold', fontSize: 20}}>-$5,99</Text>
+    </View>
+    <Text>Entertainment</Text>
+    </View>
+    </Card>
+   
+<AppleFilled />
+   
+
     </SafeAreaView>
   );
 }
@@ -92,5 +106,8 @@ const styles = StyleSheet.create({
    width: '100%',
    
   },
-
+card1: {
+  height: 80,
+  width: '100%'
+}
 });
